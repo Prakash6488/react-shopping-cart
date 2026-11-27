@@ -1,0 +1,355 @@
+
+/* ---------------------- BODY ---------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f3f9;
+  color: #222;
+}
+
+/* ---------------------- MAIN DIV ---------------------- */
+
+.main-div {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f0f3f9;
+}
+
+/* ---------------------- NAVBAR ---------------------- */
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to right, #087eea, #ad1ea8);
+  color: white;
+}
+
+.navbar h2 {
+  font-size: 26px;
+}
+
+.navbar p {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.navbar button {
+  height: 40px;
+  padding: 0px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff8500;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mode {
+  min-width: 110px;
+}
+
+/* ---------------------- CONTENT LAYOUT ---------------------- */
+
+.content-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 30px ;
+    align-items: stretch;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ---------------------- SIDEBAR ---------------------- */
+.sidebar {
+    width: 240px;
+    min-width: 240px;
+    min-height: 700px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+}
+
+.menu h2 {
+    color: #2872c7;
+}
+
+.link {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.link:hover {
+    background-color: #eff6fd;
+    color: #2872c7;
+}
+
+.user {
+    margin-top: 15px;
+    border-top: 1px solid #aaa;
+    padding-top: 10px;
+}
+
+/* ---------------------- PRODUCT CARD ---------------------- */
+
+.productCard {
+  width: 100%;
+  min-height: 450px;
+  padding: 15px 25px 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+}
+
+.our {
+  color: #2872c7;
+  padding-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+
+.allcard {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 0px;
+}
+
+.card {
+  flex: 1;
+  min-width: 0;
+  height: 350px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: white;
+}
+
+.card-img {
+  height: 200px;
+  width: 100%;
+  margin: 10px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-img {
+  height: 180px;
+  width: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.img-detail {
+  width: 100%;
+  height: 130px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.img-detail h3 {
+  margin: 5px;
+}
+
+.img-detail h3:nth-child(2) {
+  color: #16804d;
+}
+
+.Add-to-Cart {
+  border-radius: 8px;
+  color: white;
+  background-color: #ff8500;
+  height: 40px;
+  width: 120px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------------------- CART ---------------------- */
+
+.cartdiv {
+  width: 100%;
+  min-height: 200px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+}
+
+.cartdiv h2 {
+  color: #2872c7;
+  margin-top: 5px;
+}
+
+.cartlist {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0px;
+  border-bottom: 1px solid #eee;
+}
+
+.price {
+  margin-left: 15px;
+}
+
+.remove {
+  height: 35px;
+  width: 100px;
+  border-radius: 8px;
+  margin-left: 15px;
+  border: none;
+  color: white;
+  background-color: #e74c3c;
+  cursor: pointer;
+}
+
+.clear {
+  height: 40px;
+  padding: 0px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff8500;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ---------------------- PROFILE ---------------------- */
+
+.profile {
+  width: 100%;
+  min-height: 300px;
+  padding: 20px 25px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+}
+
+.profile h2 {
+  color: #2872c7;
+}
+
+.profile p {
+  padding: 10px;
+  margin: 8px 0px;
+  background-color: #eff6fd;
+  border-radius: 8px;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+
+.footer {
+  width: 100%;
+  min-height: 170px;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to right, #1c285d, #302c83);
+  color: white;
+}
+
+.footer h3 {
+  margin-top: 15px;
+}
+
+
+/* ---------------- LIGHT MODE ---------------- */
+
+.main-div.light {
+    background-color: #f0f3f9;
+    color: #222;
+}
+
+.light .sidebar,
+.light .productCard,
+.light .card,
+.light .cartdiv,
+.light .profile {
+    background-color: white;
+    color: #222;
+}
+
+.light .link {
+    color: black;
+}
+
+.light .profile p {
+    background-color: #eff6fd;
+}
+
+.light .footer {
+    background: linear-gradient(to right, #1c285d, #302c83);
+    color: white;
+}
+
+/* DARK MODE */
+
+.dark {
+    background-color: #121212;
+    color: white;
+}
+
+.dark .navbar {
+    background: #222;
+}
+
+.dark .sidebar,
+.dark .productCard,
+.dark .card,
+.dark .cartdiv,
+.dark .profile {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark .link {
+    color: white;
+}
+
+.dark .profile p {
+    background-color: #333;
+    color: white;
+}
+
+.dark .footer {
+    background: #080808;
+    color: white;
+}
+
+.dark .cartlist {
+    border-bottom: 1px solid #444;
+}
+
+.dark .card {
+    border: 1px solid #444;
+}
